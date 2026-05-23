@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:text="Live Matches"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryOrange"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerLiveMatches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtNoLive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No live matches now"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:visibility="gone"
+            android:padding="16dp"/>
+
+        <TextView
+            android:text="Results"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryOrange"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerFinishedMatches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtNoResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No finished matches available"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:visibility="gone"
+            android:padding="16dp"/>
+
+        <TextView
+            android:id="@+id/txtViewAllResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All"
+            android:textColor="@color/primaryOrange"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:text="Upcoming Matches"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryOrange"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerUpcomingMatches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtUpcomingPlaceholder"
+            android:text="No upcoming matches"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtViewAllUpcoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All"
+            android:textColor="@color/primaryOrange"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>

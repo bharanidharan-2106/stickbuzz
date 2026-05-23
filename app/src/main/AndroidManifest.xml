@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StickBuzz">
+
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.StickBuzz">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.auth.LoginActivity"/>
+        <activity android:name=".ui.auth.RegisterActivity"/>
+
+
+        <!-- ADMIN -->
+        <activity android:name=".ui.admin.AdminDashboardActivity"/>
+        <activity android:name=".ui.admin.CreateMatchActivity"/>
+        <activity android:name=".ui.admin.AdminMatchListActivity"/>
+        <activity android:name=".ui.admin.AdminMatchDetailActivity"/>
+        <activity android:name=".ui.admin.CreateTournamentActivity"/>
+        <activity android:name=".ui.admin.CreateTeamActivity" />
+        <activity android:name=".ui.admin.AdminTournamentDetailActivity" />
+        <activity android:name=".ui.admin.AdminTournamentListActivity" />
+        <activity android:name=".ui.admin.TeamListActivity" />
+
+        <!-- USER -->
+        <activity android:name=".ui.user.UserDashboardActivity"/>
+        <activity android:name=".ui.user.UserMatchDetailActivity"/>
+        <activity android:name=".ui.user.UpcomingMatchesActivity"/>
+        <activity android:name=".ui.user.FinishedMatchesActivity"/>
+        <activity android:name=".ui.user.TournamentListActivity"/>
+        <activity android:name=".ui.user.UserTournamentDetailActivity"/>
+
+
+        <receiver
+            android:name=".utils.MatchReminderReceiver"
+            android:exported="false"/>
+    </application>
+
+</manifest>

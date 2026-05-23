@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "398218720036",
+    "firebase_url": "https://stickbuzz-641c5-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "stickbuzz-641c5",
+    "storage_bucket": "stickbuzz-641c5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398218720036:android:dfedc9a860d108f1b0f9b1",
+        "android_client_info": {
+          "package_name": "com.stickbuzz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5hRdzoc49vLjvUvj1zxm5Dd2Wh7nh_gs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
