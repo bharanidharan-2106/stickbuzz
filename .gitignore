@@ -1,15 +1,78 @@
+# =========================
+# Android / Gradle
+# =========================
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+.gradle/
 local.properties
+.kotlin/
+
+# =========================
+# Android Studio
+# =========================
+.idea/
+.idea/caches
+.idea/libraries
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# =========================
+# Build files
+# =========================
+/build
+/build/
+/app/build/
+bin/
+gen/
+out/
+
+# APK / Bundle files
+*.apk
+*.aab
+*.ap_
+
+# Dex / Class files
+*.dex
+*.class
+
+# =========================
+# Native build
+# =========================
+.externalNativeBuild/
+.cxx/
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Android captures
+# =========================
+/captures
+captures/
+
+# =========================
+# Secrets / Signing
+# =========================
+*.jks
+*.keystore
+signing.properties
+key.properties
+
+# =========================
+# Firebase
+# =========================
+google-services.json
+
+# =========================
+# Navigation temp files
+# =========================
+.navigation/
